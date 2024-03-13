@@ -1,0 +1,23 @@
+
+# modmyt475.odm.assessmentds.assessmentdto.AssessmentRequest
+modmyt475.odm.assessmentds.assessmentdto.AssessmentRequest#concept.documentation = 
+modmyt475.odm.assessmentds.assessmentdto.AssessmentRequest#concept.label = AssessmentRequest
+modmyt475.odm.assessmentds.assessmentdto.AssessmentRequest.AssessmentRequest(java.time.LocalDate,java.time.LocalDate,modmyt475.odm.assessmentds.assessmentdto.Status)#phrase.navigation = a new {AssessmentRequest} where {0, dateOfBirth} {1, firstTreatmentDate} {2, status}
+modmyt475.odm.assessmentds.assessmentdto.AssessmentRequest.dateOfBirth#phrase.action = set the dateOfBirth of {this} to {dateOfBirth}
+modmyt475.odm.assessmentds.assessmentdto.AssessmentRequest.dateOfBirth#phrase.navigation = {dateOfBirth} of {this}
+modmyt475.odm.assessmentds.assessmentdto.AssessmentRequest.firstTreatmentDate#phrase.action = set the firstTreatmentDate of {this} to {firstTreatmentDate}
+modmyt475.odm.assessmentds.assessmentdto.AssessmentRequest.firstTreatmentDate#phrase.navigation = {firstTreatmentDate} of {this}
+modmyt475.odm.assessmentds.assessmentdto.AssessmentRequest.status#phrase.action = set the status of {this} to {status}
+modmyt475.odm.assessmentds.assessmentdto.AssessmentRequest.status#phrase.clearer = clear the status of {this}
+modmyt475.odm.assessmentds.assessmentdto.AssessmentRequest.status#phrase.navigation = {status} of {this}
+
+# modmyt475.odm.assessmentds.assessmentdto.AssessmentResponse
+modmyt475.odm.assessmentds.assessmentdto.AssessmentResponse#concept.label = AssessmentResponse
+modmyt475.odm.assessmentds.assessmentdto.AssessmentResponse.AssessmentResponse(java.time.LocalDate)#phrase.navigation = a new {AssessmentResponse} where {0, dueDate}
+modmyt475.odm.assessmentds.assessmentdto.AssessmentResponse.dueDate#phrase.action = set the dueDate of {this} to {dueDate}
+modmyt475.odm.assessmentds.assessmentdto.AssessmentResponse.dueDate#phrase.navigation = {dueDate} of {this}
+
+# modmyt475.odm.assessmentds.assessmentdto.Status
+modmyt475.odm.assessmentds.assessmentdto.Status#concept.label = status
+modmyt475.odm.assessmentds.assessmentdto.Status.ACTIVE#instance.label = ACTIVE
+modmyt475.odm.assessmentds.assessmentdto.Status.INACTIVE#instance.label = INACTIVE

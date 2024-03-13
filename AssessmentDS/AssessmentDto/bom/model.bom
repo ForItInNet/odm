@@ -1,0 +1,63 @@
+
+package modmyt475.odm.assessmentds.assessmentdto;
+
+
+class AssessmentRequest
+        property ads.typeId "2"
+        property com.fasterxml.jackson.annotation.JsonTypeName "AssessmentRequest"
+        #de.generated
+{
+    java.time.LocalDate dateOfBirth
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "dateOfBirth"
+                #update;
+    java.time.LocalDate firstTreatmentDate
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "firstTreatmentDate"
+                #update;
+    modmyt475.odm.assessmentds.assessmentdto.Status status
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "status"
+                #update;
+    AssessmentRequest(java.time.LocalDate dateOfBirth, java.time.LocalDate firstTreatmentDate, modmyt475.odm.assessmentds.assessmentdto.Status status)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    AssessmentRequest()
+                #dataio.default;
+}
+
+class AssessmentResponse
+        property ads.typeId "3"
+        property com.fasterxml.jackson.annotation.JsonTypeName "AssessmentResponse"
+        #de.generated
+{
+    java.time.LocalDate dueDate
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "dueDate"
+                #update;
+    AssessmentResponse(java.time.LocalDate dueDate)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    AssessmentResponse()
+                #dataio.default;
+}
+
+class Status
+        extends java.lang.Enum
+        property ads.typeId "1"
+        property com.fasterxml.jackson.annotation.JsonTypeName "status"
+        #de.generated
+{
+    domain {static ACTIVE, static INACTIVE}
+    static final readonly modmyt475.odm.assessmentds.assessmentdto.Status ACTIVE
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "ACTIVE";
+    static final readonly modmyt475.odm.assessmentds.assessmentdto.Status INACTIVE
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "INACTIVE";
+}
+
