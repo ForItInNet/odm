@@ -17,6 +17,14 @@ modmyt475.odm.assessmentds.assessmentdto.AssessmentResponse.AssessmentResponse(j
 modmyt475.odm.assessmentds.assessmentdto.AssessmentResponse.dueDate#phrase.action = set the dueDate of {this} to {dueDate}
 modmyt475.odm.assessmentds.assessmentdto.AssessmentResponse.dueDate#phrase.navigation = {dueDate} of {this}
 
+# modmyt475.odm.assessmentds.assessmentdto.Details
+modmyt475.odm.assessmentds.assessmentdto.Details#concept.label = Details
+modmyt475.odm.assessmentds.assessmentdto.Details.Details(java.time.LocalDate,java.time.LocalDate)#phrase.navigation = a new {Details} where {0, currentDate} {1, nextEstimatedAppointment}
+modmyt475.odm.assessmentds.assessmentdto.Details.currentDate#phrase.action = set the currentDate of {this} to {currentDate}
+modmyt475.odm.assessmentds.assessmentdto.Details.currentDate#phrase.navigation = {currentDate} of {this}
+modmyt475.odm.assessmentds.assessmentdto.Details.nextEstimatedAppointment#phrase.action = set the nextEstimatedAppointment of {this} to {nextEstimatedAppointment}
+modmyt475.odm.assessmentds.assessmentdto.Details.nextEstimatedAppointment#phrase.navigation = {nextEstimatedAppointment} of {this}
+
 # modmyt475.odm.assessmentds.assessmentdto.Status
 modmyt475.odm.assessmentds.assessmentdto.Status#concept.label = status
 modmyt475.odm.assessmentds.assessmentdto.Status.ACTIVE#instance.label = ACTIVE

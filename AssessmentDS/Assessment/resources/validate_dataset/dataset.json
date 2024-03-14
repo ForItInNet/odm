@@ -1,1 +1,1 @@
-{"operationId":"b72a66c9-f010-4301-96ea-f56968331efc","body":{"assessmentController":{"dateOfBirth":"2024-03-12","firstTreatmentDate":"2024-01-30","status":"ACTIVE"}}}
+{"operationId":"b72a66c9-f010-4301-96ea-f56968331efc","body":{"assessmentController":{"dateOfBirth":"2004-03-12","firstTreatmentDate":"2024-01-30","status":"ACTIVE"},"dateInput":{"currentDate":"2024-03-14","nextEstimatedAppointment":"2024-03-14"}}}

@@ -19,6 +19,7 @@
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
                 <input bomType="modmyt475.odm.assessmentds.assessmentdto.AssessmentRequest" collection="false" name="AssessmentController"/>
+                <input bomType="modmyt475.odm.assessmentds.assessmentdto.Details" collection="false" name="DateInput"/>
                 <output bomType="modmyt475.odm.assessmentds.assessmentdto.AssessmentResponse" collection="true" name="Rule"/>
                 <rule defaultRule="false" href="node_1/AssessmentValidation.drl" kind="BusinessRule" name="AssessmentValidation"/>
             </ruleset>
@@ -27,7 +28,18 @@
         <informationRequirement>
             <requiredInput href="#node_0"/>
         </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
     </decision>
+    <inputData id="node_2" name="DateInput">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="modmyt475.odm.assessmentds.assessmentdto.Details" collection="false" name="DateInput"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_2_ii" name="DateInput" typeRef="modmyt475.odm.assessmentds.assessmentdto.Details"/>
+    </inputData>
 </definitions>
 </definition>
 </com.ibm.rules.studio.model.decisionmodel:DecisionModel>

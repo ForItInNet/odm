@@ -46,6 +46,28 @@ class AssessmentResponse
                 #dataio.default;
 }
 
+class Details
+        property ads.typeId "4"
+        property com.fasterxml.jackson.annotation.JsonTypeName "Details"
+        #de.generated
+{
+    java.time.LocalDate currentDate
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "currentDate"
+                #update;
+    java.time.LocalDate nextEstimatedAppointment
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "nextEstimatedAppointment"
+                #update;
+    Details(java.time.LocalDate currentDate, java.time.LocalDate nextEstimatedAppointment)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Details()
+                #dataio.default;
+}
+
 class Status
         extends java.lang.Enum
         property ads.typeId "1"

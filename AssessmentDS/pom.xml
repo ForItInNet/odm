@@ -4,6 +4,7 @@
     <groupId>modmyt475.odm.assessmentds</groupId>
     <artifactId>assessmentDS</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+    <description>test</description>
     <name>AssessmentDS</name>
 
     <packaging>pom</packaging>
